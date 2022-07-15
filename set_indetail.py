@@ -70,9 +70,22 @@
 # b.pop()
 # print(b)
 
-A={1,2,3,4,5}
-B={5,6,7}
-C={7,8,9}
-print('Are A and B disjoint?', A.isdisjoint(B))
-print('Are A and B disjoint?', A.isdisjoint(C))
-print('Are A and B disjoint?', B.isdisjoint(C))
+# A={1,2,3,4,5}
+# B={5,6,7}
+# C={7,8,9}
+# print('Are A and B disjoint?', A.isdisjoint(B))
+# print('Are A and B disjoint?', A.isdisjoint(C))
+# print('Are A and B disjoint?', B.isdisjoint(C))
+
+# A={1,2,3,4}
+# B={1,2,3}
+# C={3,4,5,6,7}
+# print(A.issubset(B))
+# print(B.issubset(A))
+# print(C.issubset(B))
+
+'''now is difference_update'''
+a={5,6,7,8,9}
+b={5,2,6,3,8}
+a.difference_update(b)
+print(a)
